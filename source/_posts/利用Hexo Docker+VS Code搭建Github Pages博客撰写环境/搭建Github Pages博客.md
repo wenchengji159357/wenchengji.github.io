@@ -82,7 +82,7 @@ docker build https://github.com/wenchengji159357/Hexo-blog-docker.git --file Doc
  docker run -it hexo-blog-image -p 4000:4000 /bin/bash
 ```
 
-3. 在浏览器的地址栏中输入http://localhost:4000，显示效果如下图所示；
+3. 在浏览器的地址栏中输入http://localhost:4000， 显示效果如下图所示；
 
 ![Hexo blog本地效果展示](https://gitee.com/wenchengji/images/raw/master/搭建Github%20Pages博客/14Hexo%20blog本地效果展示.png)
 
@@ -132,8 +132,6 @@ cat ~/.ssh/id_rsa
 git push -u origin hexo_blog
 ```
 
-14. 根据自己的用户名，在浏览器的地址栏中输入https://${Github_User}.github.io/, 显示效果如下图所示；
+14. 根据自己的用户名，在浏览器的地址栏中输入https://${Github_User}.github.io, 显示效果如下图所示；
 
 ![Hexo blog最终效果展示](https://gitee.com/wenchengji/images/raw/master/搭建Github%20Pages博客/22Hexo%20blog最终效果展示.png)
-
-## **四、**
