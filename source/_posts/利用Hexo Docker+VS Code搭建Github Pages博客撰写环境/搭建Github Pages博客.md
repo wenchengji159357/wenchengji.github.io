@@ -1,11 +1,12 @@
 ---
-title: 利用Github搭建个人博客
+title: 搭建Github Pages博客
 index_img: https://avatars2.githubusercontent.com/t/3419353?s=280&v=4
 categories: 利用Hexo Docker+VS Code搭建Github Pages博客撰写环境
-tags: Hexo博客搭建  
+tags: 
+    - Hexo博客搭建
+    - Docker  
 excerpt: 本文是在Windows 10上创建docker容器（Hexo构建环境），之后用VS Code连接Docker容器进行博客创作，利用Github Action监听git push事件，实现一键构建博客页面
 ---
-# **利用Github搭建个人博客**
 
 本文是在Windows 10上创建docker容器（Hexo构建环境），之后用VS Code连接Docker容器进行博客创作，利用Github Action监听git push事件，实现一键构建博客页面
 
@@ -120,11 +121,9 @@ cat ~/.ssh/id_rsa
 
 ![新增secret](https://gitee.com/wenchengji/images/raw/master/搭建Github%20Pages博客/20新增secret.png)
 
-
-
 12. 在Name下面的文本框中输入SSH_PRIVATE，在Value下面的文本框中粘贴刚才的输出结果（SSH私钥），然后点击Add secret按钮；
 
-![添加SSH私钥]](https://gitee.com/wenchengji/images/raw/master/搭建Github%20Pages博客/21添加SSH私钥.png)
+![添加SSH私钥](https://gitee.com/wenchengji/images/raw/master/搭建Github%20Pages博客/21添加SSH私钥.png)
 
 13. 在刚才的容器终端中，输入以下命令，目的是把用于构建博客的代码上传至hexo_blog分支；
 
