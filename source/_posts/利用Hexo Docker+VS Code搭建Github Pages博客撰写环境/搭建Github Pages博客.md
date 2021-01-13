@@ -10,7 +10,7 @@ excerpt: 本文是在Windows 10上创建docker容器（Hexo构建环境），之
 
 本文是在Windows 10上创建docker容器（Hexo构建环境），之后用VS Code连接Docker容器进行博客创作，利用Github Action监听git push事件，实现一键构建博客页面
 
-## **一、注册账号**
+## **一、注册Github账号**
 
 1. 用浏览器打开[Github官网](https://github.com/github),如下图所示，点击Sign up按钮；
 
@@ -32,7 +32,7 @@ excerpt: 本文是在Windows 10上创建docker容器（Hexo构建环境），之
 
 ![Github注册邮箱认证](https://gitee.com/wenchengji/images/raw/master/搭建Github%20Pages博客/05Github注册邮箱认证.png)
 
-## **二、创建仓库**
+## **二、创建Github仓库**
 
 1. 创建仓库，如下图所示，点击Create a repository按钮；
 
@@ -62,7 +62,7 @@ excerpt: 本文是在Windows 10上创建docker容器（Hexo构建环境），之
 
 ![Github仓库初次提交](https://gitee.com/wenchengji/images/raw/master/搭建Github%20Pages博客/12Github仓库初次提交.png)
 
-8. 根据自己的用户名，在浏览器的地址栏中输入https://${Github_User}.github.io/，显示效果如下图所示；
+8. 根据自己的用户名，在浏览器的地址栏中输入https://${Github_User}.github.io，显示效果如下图所示；
 
 ![Github Pages初次效果展示](https://gitee.com/wenchengji/images/raw/master/搭建Github%20Pages博客/13Github%20Pages初次效果展示.png)
 
@@ -73,7 +73,8 @@ excerpt: 本文是在Windows 10上创建docker容器（Hexo构建环境），之
 ```bash
 docker build https://github.com/wenchengji159357/Hexo-blog-docker.git --file Dockerfile --build-arg Github_User="syedndeliar23602" --build-arg Github_Email="syedndeliar23602@gmail.com" --build-arg Github_Branch_Name="main" --tag hexo-blog-image
 ```
-> 注：syedndeliar23602、syedndeliar23602@gmail.com修改成自己的GitHub用户名和GitHub邮箱，Github_Branch_Name为Github Pages设置的分支名称，默认为master，如果分支名称是master，则删除参数--build-arg Github_Branch_Name="main"即可，默认的博客主题是fluid
+
+<p class="note note-primary">注：syedndeliar23602、syedndeliar23602@gmail.com修改成自己的GitHub用户名和GitHub邮箱，Github_Branch_Name为Github Pages设置的分支名称，默认为master，如果分支名称是master，则删除参数--build-arg Github_Branch_Name="main"即可，默认的博客主题是fluid</p>
 
 2. 通过下面的命令拉取docker容器，并进入镜像；
 
@@ -81,7 +82,7 @@ docker build https://github.com/wenchengji159357/Hexo-blog-docker.git --file Doc
  docker run -it hexo-blog-image -p 4000:4000 /bin/bash
 ```
 
-3. 在浏览器的地址栏中输入http://localhost:4000/，显示效果如下图所示；
+3. 在浏览器的地址栏中输入http://localhost:4000，显示效果如下图所示；
 
 ![Hexo blog本地效果展示](https://gitee.com/wenchengji/images/raw/master/搭建Github%20Pages博客/14Hexo%20blog本地效果展示.png)
 
@@ -130,6 +131,7 @@ cat ~/.ssh/id_rsa
 ```bash
 git push -u origin hexo_blog
 ```
+
 14. 根据自己的用户名，在浏览器的地址栏中输入https://${Github_User}.github.io/, 显示效果如下图所示；
 
 ![Hexo blog最终效果展示](https://gitee.com/wenchengji/images/raw/master/搭建Github%20Pages博客/22Hexo%20blog最终效果展示.png)
