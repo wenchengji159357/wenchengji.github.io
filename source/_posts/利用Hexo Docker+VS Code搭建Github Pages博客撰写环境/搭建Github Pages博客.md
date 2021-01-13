@@ -11,7 +11,7 @@ excerpt: 本文是在Windows 10上创建docker容器（Hexo构建环境），之
 
 ## **一、注册账号**
 
-1. 用浏览器打开[Github官网](https://github.com/github)，如下图所示，点击Sign up按钮；
+1. 用浏览器打开[Github官网](https://github.com/github),如下图所示，点击Sign up按钮；
 
 ![Github官网](https://gitee.com/wenchengji/images/raw/master/搭建Github%20Pages博客/01Github官网.png)
 
@@ -100,7 +100,7 @@ cat ~/.ssh/id_rsa.pub
 
 7. 点击New SSH key按钮；
 
-![添加SSH Key](https://gitee.com/wenchengji/images/raw/master/搭建Github%20Pages博客/17添加SSH Key.png)
+![添加SSH Key](https://gitee.com/wenchengji/images/raw/master/搭建Github%20Pages博客/17添加SSH%20Key.png)
 
 8. 在Title下面的文本框中自己的实际情况进行命名，在Key下面的文本框中粘贴刚才的输出结果（SSH公钥），然后点击Add SSH key按钮；
 
