@@ -12,7 +12,7 @@ excerpt: 本文是在Windows 10上创建docker容器（Hexo构建环境），之
 
 ## **一、注册Github账号**
 
-1. 用浏览器打开[Github官网](https://github.com/github),如下图所示，点击Sign up按钮；
+1. 用浏览器打开<a class="btn" href="https://github.com/github" title="https://github.com/github">Github官网</a>,如下图所示，点击Sign up按钮；
 
 ![Github官网](https://gitee.com/wenchengji/images/raw/master/搭建Github%20Pages博客/01Github官网.png)
 
@@ -92,7 +92,7 @@ docker build https://github.com/wenchengji159357/Hexo-blog-docker.git --file Doc
 cat ~/.ssh/id_rsa.pub
 ```
 
-5. 再次用浏览器打开[Github官网](https://github.com/github)，如下图所示，头像旁边的小三角，点击Settings按钮；
+5. 再次用浏览器打开<a class="btn" href="https://github.com/github" title="https://github.com/github">Github官网</a>，如下图所示，头像旁边的小三角，点击Settings按钮；
 
 ![打开Github账户设置](https://gitee.com/wenchengji/images/raw/master/搭建Github%20Pages博客/15打开Github账户设置.png)
 
