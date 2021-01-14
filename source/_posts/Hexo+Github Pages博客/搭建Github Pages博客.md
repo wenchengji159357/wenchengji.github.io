@@ -1,7 +1,7 @@
 ---
 title: 搭建Github Pages博客
 index_img: https://avatars2.githubusercontent.com/t/3419353?s=280&v=4
-categories: 利用Hexo Docker+VS Code搭建Github Pages博客撰写环境
+categories: Hexo+Github Pages博客
 tags: 
     - Hexo博客搭建
     - Docker  
